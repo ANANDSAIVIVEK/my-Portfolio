@@ -16,10 +16,18 @@ function Navbar() {
     ]
 
     return (
+
         <nav className="fixed top-0 left-0 w-full z-50 bg-[#080b09]/90 backdrop-blur-lg border-b border-white/10">
             <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-                <a href="#home" className="text-xl font-bold">
-                    Anand<span className="text-green-400">.</span>
+                <a href="#home" className="flex items-center gap-2">
+                    <img
+                        src="/logo.png"
+                        alt="AS Logo"
+                        className="w-10 h-10 object-contain"
+                    />
+                    <span className="text-xl font-bold">
+                        Anand<span className="text-green-400">.</span>
+                    </span>
                 </a>
 
                 <div className="hidden md:flex items-center gap-8">
