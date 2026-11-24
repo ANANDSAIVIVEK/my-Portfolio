@@ -44,3 +44,20 @@ section {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Hero GIF */
+.waving-gif {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1023px) {
+  .waving-gif {
+    max-width: 300px;
+  }
+}

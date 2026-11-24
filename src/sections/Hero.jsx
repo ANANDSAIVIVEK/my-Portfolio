@@ -1,6 +1,7 @@
 
 import { ArrowDown, ArrowUpRight, Download } from 'lucide-react'
 import { motion } from 'framer-motion'
+import wavegif from '../assets/Neon Wave Animation Grid.gif'
 
 function Hero() {
     return (
@@ -57,6 +58,20 @@ function Hero() {
                 </a>
 
             </div>
+            {/* Right side GIF */}
+            <motion.div
+                initial={{ opacity: 1, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+                className="flex justify-center items-center w-full"
+            >
+                <img
+                    src={wavegif}
+                    alt="Anand waving"
+                    className="waving-gif drop-shadow-[0_0_35px_rgba(20,83,45,0.45)] [mask-image:radial-gradient(circle,black_60%,transparent_100%)]"
+                />
+            </motion.div>
+
         </section>
     )
 }
