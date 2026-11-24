@@ -46,7 +46,7 @@ function About() {
 
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        whileInView={{ opacity: 1, x: 10 }}
                         viewport={{ once: true }}
                         className="grid grid-cols-2 gap-5"
                     >
